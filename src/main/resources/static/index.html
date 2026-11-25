@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="Раскрой профиля, склад заготовок и выполнение заказов">
+  <title>Раскрой профиля</title>
+  <link rel="icon" href="/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/workshop.css">
+  <script src="/workshop.js" defer></script>
+</head>
+<body>
+  <a id="skip" class="skip" href="#main">К содержимому</a>
+  <div class="shell" data-rail="compact">
+    <aside class="rail">
+      <div class="rail-heading">
+        <a href="#plans" class="brand" aria-label="Раскрой профиля"><img src="/mark.svg" width="38" height="38" alt=""><span class="rail-label">Раскрой профиля</span></a>
+      </div>
+      <nav id="rail-links" aria-label="Разделы">
+        <a href="#plans" data-view="plans" title="Планы раскроя"><svg aria-hidden="true"><use href="/icons.svg#scissors"></use></svg><span class="rail-label">Планы раскроя</span></a>
+        <a href="#stock" data-view="stock" title="Склад"><svg aria-hidden="true"><use href="/icons.svg#warehouse"></use></svg><span class="rail-label">Склад</span></a>
+        <a href="#orders" data-view="orders" title="Заказы"><svg aria-hidden="true"><use href="/icons.svg#clipboard-list"></use></svg><span class="rail-label">Заказы</span></a>
+        <a href="#journal" data-view="journal" title="Журнал"><svg aria-hidden="true"><use href="/icons.svg#history"></use></svg><span class="rail-label">Журнал</span></a>
+      </nav>
+      <div class="rail-actions">
+        <button type="button" id="demo" class="rail-action" title="Демо-данные" hidden><svg aria-hidden="true"><use href="/icons.svg#flask-conical"></use></svg><span class="rail-label">Демо-данные</span></button>
+        <button type="button" id="rail-toggle" class="rail-action" aria-label="Развернуть меню" aria-expanded="false" aria-controls="rail-links" title="Развернуть меню"><svg aria-hidden="true"><use href="/icons.svg#panel-left"></use></svg><span class="rail-label">Свернуть меню</span></button>
+      </div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <p class="startup" role="status">Загружаем мастерскую…</p>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+</body>
+</html>
